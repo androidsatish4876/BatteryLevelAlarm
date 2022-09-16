@@ -12,8 +12,28 @@
         android:layout_height="match_parent"
        android:layout_weight="1"
         android:background="@drawable/bg_corner"
-
+        android:gravity="center_vertical"
         android:orientation="vertical">
+
+        <com.tulsi.batterylevelalarm.waveloadingview.WaveLoadingView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+            app:wlv_borderColor="@color/design_default_color_primary_variant"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="40"
+            app:wlv_shapeType="circle"
+            app:wlv_round_rectangle="true"
+            app:wlv_triangle_direction="north"
+            app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleCenterStrokeWidth="3dp"
+            app:wlv_titleCenter="50%"
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="24sp"
+            app:wlv_waveAmplitude="70"
+            app:wlv_waveColor="@color/design_default_color_primary_variant"/>
+
 
     </LinearLayout>
 

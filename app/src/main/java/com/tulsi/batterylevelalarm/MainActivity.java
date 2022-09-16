@@ -15,22 +15,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mWaveLoadingView = (WaveLoadingView) findViewById(R.id.waveLoadingView);
-        mWaveLoadingView.setShapeType(WaveLoadingView.ShapeType.CIRCLE);
-        //mWaveLoadingView.setTopTitle("Top Title");
-        mWaveLoadingView.setCenterTitleColor(Color.GRAY);
-        mWaveLoadingView.setCenterTitle("90");
+        mWaveLoadingView.setTopTitle(10+"%");
+        mWaveLoadingView.setCenterTitleColor(Color.WHITE);
+        mWaveLoadingView.setCenterTitle("");
         mWaveLoadingView.setBottomTitleSize(18);
-        mWaveLoadingView.setProgressValue(90);
-        mWaveLoadingView.setBorderWidth(10);
-        mWaveLoadingView.setAmplitudeRatio(60);
-        mWaveLoadingView.setWaveColor(Color.GRAY);
-        mWaveLoadingView.setBorderColor(Color.GRAY);
-        mWaveLoadingView.setTopTitleStrokeColor(Color.BLUE);
+        mWaveLoadingView.setProgressValue(0);
+        mWaveLoadingView.setBorderWidth(5);
+        mWaveLoadingView.setAmplitudeRatio(100);
+        mWaveLoadingView.setWaveColor(Color.parseColor("#B2DFDB"));
+        mWaveLoadingView.setBorderColor(Color.parseColor("#4CAF50"));
+        mWaveLoadingView.setTopTitleStrokeColor(Color.WHITE);
         mWaveLoadingView.setTopTitleStrokeWidth(3);
-        mWaveLoadingView.setAnimDuration(0);
+        mWaveLoadingView.setWaterLevelRatio(0.2f);
+        mWaveLoadingView.setAnimDuration(3000);
         mWaveLoadingView.pauseAnimation();
-//        mWaveLoadingView.resumeAnimation();
-//        mWaveLoadingView.cancelAnimation();
-//        mWaveLoadingView.startAnimation();
+        mWaveLoadingView.resumeAnimation();
+        mWaveLoadingView.cancelAnimation();
+        mWaveLoadingView.startAnimation();
     }
 }

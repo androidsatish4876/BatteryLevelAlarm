@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mWaveLoadingView = (WaveLoadingView) findViewById(R.id.waveLoadingView);
-        mWaveLoadingView.setTopTitle(10+"%");
+        mWaveLoadingView.setTopTitle("");
         mWaveLoadingView.setCenterTitleColor(Color.WHITE);
-        mWaveLoadingView.setCenterTitle("");
+        mWaveLoadingView.setCenterTitle(10+"%");
         mWaveLoadingView.setBottomTitleSize(18);
         mWaveLoadingView.setProgressValue(0);
         mWaveLoadingView.setBorderWidth(5);
@@ -32,5 +32,6 @@ public class MainActivity extends AppCompatActivity {
         mWaveLoadingView.resumeAnimation();
         mWaveLoadingView.cancelAnimation();
         mWaveLoadingView.startAnimation();
+        mWaveLoadingView.setProgressValue(50);
     }
 }

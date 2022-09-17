@@ -20,7 +20,7 @@
             android:id="@+id/waveLoadingView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="100dp"
+            android:layout_margin="60dp"
             app:wlv_borderColor="@color/design_default_color_primary_variant"
             app:wlv_borderWidth="3dp"
             app:wlv_progressValue="40"
@@ -31,7 +31,7 @@
             app:wlv_titleCenterStrokeWidth="3dp"
             app:wlv_titleCenter="50%"
             app:wlv_titleCenterColor="@android:color/white"
-            app:wlv_titleCenterSize="24sp"
+            app:wlv_titleCenterSize="30sp"
             app:wlv_waveAmplitude="70"
             app:wlv_waveColor="@color/design_default_color_primary_variant"/>
 
@@ -42,7 +42,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
        android:layout_weight="3"
+        android:gravity="center"
         android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            app:cardCornerRadius="20dp"
+
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                android:onClick="stopAlarm"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_alarm_off_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Stop Alarm"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 </LinearLayout>
